@@ -1,0 +1,85 @@
+.App {
+  background-color: white;
+}
+
+#main-activity-area {
+  background-color: rgb(218, 237, 255);
+  height: 300px;
+  width: 500px;
+  margin: auto;
+}
+
+#moving-area {
+  height: 250px;
+  width: 100%;
+  background-color: rgb(255, 242, 218);
+  position: relative;
+}
+
+#avatar {
+  height: 100px;
+  width: 40px;
+  background-color: rgb(255, 250, 237);
+  border-radius: 20px;
+  border: 1px solid rgb(163, 163, 163);
+  position: absolute;
+  transition: 0.2s;
+}
+
+.c-quiz-barrier {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+
+
+}
+
+.c-quiz-barrier__barrier {
+  width: 50px;
+  height: 90%;
+  background-color: lightblue;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.c-fullscreen {
+  position: absolute;
+  right: 0;
+}
+
+.c-quiz__content {
+  transition: 1s;
+  animation: fade 1s;
+}
+
+.c-quiz__answer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  font-weight: bold;
+  animation: answer 2s;
+  font-size: 4rem;
+}
+
+@keyframes answer {
+  0% {
+    font-size: 0;
+  }
+
+  100% {
+    font-size: 4rem;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
